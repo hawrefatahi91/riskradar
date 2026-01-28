@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Risk Radar | Feedback</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-badge"><span>🛡️</span></div>
+        <div>Risk Radar</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">What is Risk Radar?</a>
+        <a href="quiz.html">Quiz</a>
+        <a class="active" href="feedback.html">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title">Feedback</h1>
+    <div class="underline"></div>
+
+    <div class="card">
+      <h2>Help us improve</h2>
+      <p>
+        Did the quiz help you improve your cybersecurity and phishing awareness?
+        Share what worked and what we should improve.
+      </p>
+
+      <!-- OPTION A: Mailto (always works, but opens user email app) -->
+      <form class="form"
+        action="mailto:riskradar.supp@gmail.com"
+        method="post"
+        enctype="text/plain">
+        <label for="name">Name (optional)</label>
+        <input id="name" name="name" placeholder="Your name" />
+
+        <label for="rating">Did this help you?</label>
+        <select id="rating" name="rating">
+          <option>Yes — a lot</option>
+          <option>Yes — somewhat</option>
+          <option>Not really</option>
+          <option>No</option>
+        </select>
+
+        <label for="msg">Your feedback</label>
+        <textarea id="msg" name="message" placeholder="Write your feedback here..."></textarea>
+
+        <button class="btn" type="submit">Send Feedback</button>
+      </form>
+
+      <div class="note">
+        If the button doesn’t send automatically on your device, use this direct email link:
+        <a class="btn secondary" style="margin-left:10px;" href="mailto:riskradar.supp@gmail.com?subject=Risk%20Radar%20Feedback">Open Email</a>
+      </div>
+
+      <hr style="border:0; border-top:1px solid var(--border); margin:18px 0;">
+
+      <!-- OPTION B: FormSubmit (recommended, sends directly to Gmail - requires simple setup) -->
+      <h2>Recommended: send directly without opening email</h2>
+      <p class="note">
+        This option sends form data to your Gmail using FormSubmit. You’ll need to confirm the first email they send you once.
+      </p>
+
+      <form class="form" action="https://formsubmit.co/riskradar.supp@gmail.com" method="POST">
+        <!-- Optional: redirect after submit -->
+        <input type="hidden" name="_next" value="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/feedback.html">
+        <input type="hidden" name="_subject" value="Risk Radar Feedback">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label>Name (optional)</label>
+        <input name="name" placeholder="Your name" />
+
+        <label>Did this help you?</label>
+        <select name="rating">
+          <option>Yes — a lot</option>
+          <option>Yes — somewhat</option>
+          <option>Not really</option>
+          <option>No</option>
+        </select>
+
+        <label>Your feedback</label>
+        <textarea name="message" placeholder="Write your feedback here..."></textarea>
+
+        <button class="btn" type="submit">Send Directly</button>
+      </form>
+
+      <div class="note">
+        Replace <b>YOUR-GITHUB-USERNAME</b> and <b>YOUR-REPO</b> in the <code>_next</code> URL.
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    © <span id="year"></span> Risk Radar
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

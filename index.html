@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Risk Radar | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-badge"><span>🛡️</span></div>
+        <div>Risk Radar</div>
+      </div>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">What is Risk Radar?</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-icon">🛡️</div>
+      <h1>Risk Radar</h1>
+      <p>
+        Welcome to Cybersecurity Awareness. Empower yourself with knowledge to defend against digital threats.
+        Learn to spot phishing attempts, protect your data, and become a strong “human firewall”.
+      </p>
+      <a class="btn" href="about.html">Enter</a>
+    </section>
+  </main>
+
+  <div class="footer">
+    © <span id="year"></span> Risk Radar
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

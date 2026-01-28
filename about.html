@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Risk Radar | What is Risk Radar?</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-badge"><span>🛡️</span></div>
+        <div>Risk Radar</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">What is Risk Radar?</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title">What is Risk Radar?</h1>
+    <div class="underline"></div>
+
+    <div class="card">
+      <h2>🛡️ Our Mission</h2>
+      <p>
+        Risk Radar is dedicated to building cybersecurity awareness and empowering individuals to recognize
+        and defend against digital threats. In today’s connected world, every person is a potential target
+        for cyberattacks.
+      </p>
+      <p>
+        We believe that educated users are the strongest defense against cybercrime. Through interactive
+        training and real-world examples, we help you become a “human firewall” for your organization and
+        personal life.
+      </p>
+    </div>
+
+    <div style="height:16px"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h2>⚠️ What We Help You With</h2>
+        <ul class="list">
+          <li>Identifying phishing emails and scams</li>
+          <li>Creating strong passwords and using 2FA</li>
+          <li>Recognizing social engineering tactics</li>
+          <li>Safe browsing and email practices</li>
+          <li>Protecting sensitive information</li>
+          <li>Responding to security incidents</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🏆 How We Help</h2>
+        <ul class="list">
+          <li>Interactive quizzes with real examples</li>
+          <li>Detailed explanations for each question</li>
+          <li>Recognition of phishing email patterns</li>
+          <li>Best practices and security tips</li>
+          <li>Track your progress and improvement</li>
+          <li>Learn at your own pace</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    © <span id="year"></span> Risk Radar
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
